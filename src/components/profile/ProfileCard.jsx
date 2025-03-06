@@ -19,7 +19,7 @@ const ProfileCard = () => {
       <div className='flex items-center gap-x-2 mt-6'>
         <Button styles='w-full sm:w-auto' variant='primary'>Follow</Button>
         <Button variant='primary'>
-          <img className='w-[18px]' src={MailIcon} alt='mail-icon'/>
+          <img className='sm:w-[18px] w-[24px]' src={MailIcon} alt='mail-icon'/>
         </Button>
       </div>
     </div>

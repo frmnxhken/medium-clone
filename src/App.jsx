@@ -5,10 +5,12 @@ import Home from '@/pages/Home'
 import Profile from '@/pages/Profile'
 import DetailPost from '@/pages/posts/DetailPost'
 import PostLayout from '@/components/layouts/PostLayout'
+import ScrollToTop from './utils/ScrollToTop'
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<MainLayout/>}>
           <Route path='/' element={<Home/>}/>

@@ -9,10 +9,10 @@ const Navbar = () => {
     <div className='w-full border-b border-gray-100 bg-white z-30'>
         <div className='container px-6 py-2 flex justify-between items-center'>
             <div className='flex items-center gap-x-8'>
-                <h1 className='text-xl font-medium'>Menengah</h1>
+                <h1 className='text-xl font-bold'>Menengah</h1>
                 <Search/>
             </div>
-            <div className='flex gap-x-8'>
+            <div className='flex gap-x-6 sm:gap-x-8'>
                 <div className='hidden sm:flex gap-x-2 items-center'>
                   <img className='w-[24px]' src={WriteIcon} alt='write-icon'/>
                   <p className='text-sm'>Write</p>

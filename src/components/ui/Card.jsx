@@ -19,13 +19,9 @@ const Card = (props) => {
         <div className='flex gap-x-8 mt-4'>
             <div className='w-[80%] sm:w-[70%]'>
                 <h1 onClick={() => navigate('/detail')} className='cursor-pointer text-xl sm:text-2xl font-bold'>{data.title}</h1>
-                <p className='text-xs sm:text-md font-medium text-gray-500 mt-2'>
+                <p className='text-xs sm:text-sm font-medium text-gray-500 mt-2'>
                     {Ellipsis(data.description)}
                 </p>
-                <div className='mt-6 flex justify-between items-center'>
-                    <p className='text-sm'>{formatDate(data.date)}</p>
-                    <img className='w-[24px]' src={BookmarkIcon} alt='bookmark-icon'/>
-                </div>
             </div>
             <div className='w-[20%] sm:w-[30%]'>
                 <img
@@ -33,6 +29,10 @@ const Card = (props) => {
                     src={data.image} 
                     alt='thumbnail' />
             </div>
+        </div>
+        <div className='w-full sm:w-[70%] mt-6 flex justify-between items-center'>
+            <p className='text-sm'>{formatDate(data.date)}</p>
+            <img className='w-[24px]' src={BookmarkIcon} alt='bookmark-icon'/>
         </div>
     </div>
   )
