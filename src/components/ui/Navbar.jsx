@@ -5,7 +5,7 @@ import BellIcon from '@/assets/icons/bell.svg'
 
 const Navbar = () => {
   return (
-    <div className='w-full sticky top-0 border-b border-gray-100'>
+    <div className='w-full border-b border-gray-100 bg-white z-30'>
         <div className='container px-6 py-2 flex justify-between items-center'>
             <div className='flex items-center gap-x-8'>
                 <h1 className='text-xl font-medium'>Menengah</h1>
