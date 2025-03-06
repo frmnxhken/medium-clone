@@ -15,7 +15,7 @@ const Card = (props) => {
         </div>
         <div className='flex gap-x-8 mt-4'>
             <div className='w-[70%]'>
-                <h1 className='text-3xl font-bold'>{data.title}</h1>
+                <h1 className='text-2xl font-bold'>{data.title}</h1>
                 <p className='text-md text-gray-500 mt-2'>
                     {data.description.length > 120 ? 
                         data.description.slice(0, 120) + '..' : data.description}
