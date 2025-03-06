@@ -1,11 +1,20 @@
+import Card from '@/components/home/Card'
 import SlideCategory from '@/components/home/SlideCategory'
+import { posts } from '@/utils/data/PostDummy'
 import React from 'react'
 
 const Home = () => {
   return (
     <div className='py-6'>
       <SlideCategory/>
-      <div className='bg-green-100 h-screen w-full mt-6'></div>
+      <div className='w-full mt-6'>
+        { posts.map((post, index) => (
+          <Card 
+            key={index}
+            data={post}  
+          />
+        )) }
+      </div>
     </div>
   )
 }
