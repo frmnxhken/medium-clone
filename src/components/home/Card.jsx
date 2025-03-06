@@ -1,9 +1,12 @@
 import React from 'react'
 import BookmarkIcon from '@/assets/icons/bookmark.svg'
 import { Ellipsis, formatDate } from '@/utils/Format'
+import { useNavigate } from 'react-router-dom'
 
 const Card = (props) => {
-    const { data } = props
+  const { data } = props
+  const navigate = useNavigate()
+  
   return (
     <div className='border-b border-gray-100 py-6'>
         <div className='flex items-center gap-x-2'>
@@ -15,7 +18,7 @@ const Card = (props) => {
         </div>
         <div className='flex gap-x-8 mt-4'>
             <div className='w-[70%]'>
-                <h1 className='text-2xl font-bold'>{data.title}</h1>
+                <h1 onClick={() => navigate('/detail')} className='cursor-pointer text-2xl font-bold'>{data.title}</h1>
                 <p className='text-md text-gray-500 mt-2'>
                     {Ellipsis(data.description)}
                 </p>

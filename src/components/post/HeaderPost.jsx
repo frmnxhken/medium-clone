@@ -1,5 +1,7 @@
 import React from 'react'
 import BookmarkIcon from '@/assets/icons/bookmark.svg'
+import ShareIcon from '@/assets/icons/share.svg'
+
 
 const HeaderPost = () => {
   return (
@@ -13,8 +15,11 @@ const HeaderPost = () => {
             </div>
         </div>
         <div className='border-y border-gray-100 p-2 flex justify-between items-center'>
-            <p>10 Comments</p>
-            <img className='w-[24px]' src={BookmarkIcon} alt='bookmark-icon' />
+            <p className='text-sm'>10 Comments</p>
+            <div className='flex items-center gap-x-8'>
+              <img className='w-[24px]' src={ShareIcon} alt='share-icon' />
+              <img className='w-[24px]' src={BookmarkIcon} alt='bookmark-icon' />
+            </div>
         </div>
     </div>
   )
