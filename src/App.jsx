@@ -1,10 +1,17 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import MainLayout from '@/components/layouts/MainLayout'
+import Home from '@/pages/Home'
 
 const App = () => {
   return (
-    <div>
-      Hello World
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainLayout/>}>
+          <Route path='/' element={<Home/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
