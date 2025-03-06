@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '@/components/home/Card'
+import Card from '@/components/ui/Card'
 import SlideCategory from '@/components/home/SlideCategory'
 import { posts } from '@/utils/data/PostDummy'
 import Sidebar from '@/components/ui/Sidebar'
