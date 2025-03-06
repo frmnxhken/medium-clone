@@ -1,5 +1,5 @@
 import React from 'react'
-import { formatDate } from '@/utils/Date'
+import { formatDate } from '@/utils/Format'
 
 const ListCard = (props) => {
   const { data } = props

@@ -1,6 +1,6 @@
 import React from 'react'
 import BookmarkIcon from '@/assets/icons/bookmark.svg'
-import { formatDate } from '@/utils/Date'
+import { Ellipsis, formatDate } from '@/utils/Format'
 
 const Card = (props) => {
     const { data } = props
@@ -17,8 +17,7 @@ const Card = (props) => {
             <div className='w-[70%]'>
                 <h1 className='text-2xl font-bold'>{data.title}</h1>
                 <p className='text-md text-gray-500 mt-2'>
-                    {data.description.length > 120 ? 
-                        data.description.slice(0, 120) + '..' : data.description}
+                    {Ellipsis(data.description)}
                 </p>
                 <div className='mt-6 flex justify-between items-center'>
                     <p className='text-sm'>{formatDate(data.date)}</p>
