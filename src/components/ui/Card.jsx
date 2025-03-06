@@ -9,7 +9,9 @@ const Card = (props) => {
   
   return (
     <div className='border-b border-gray-100 py-6'>
-        <div className='flex items-center gap-x-2'>
+        <div 
+            onClick={() => navigate('/profile')}
+            className='flex items-center gap-x-2 cursor-pointer'>
             <img
                 className='w-[24px] h-[24px] rounded-md object-cover' 
                 src={data.profile} 
