@@ -11,7 +11,7 @@ const Dropdown = ({ options, onSelect, isOpen }) => {
               onClick={() => {
                 onSelect(option)
               }}
-              className='block w-full py-4 text-left text-sm'
+              className='cursor-pointer block w-full py-4 text-left text-sm'
             >
               {option}
             </button>
