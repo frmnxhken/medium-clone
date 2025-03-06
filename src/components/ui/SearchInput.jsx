@@ -1,9 +1,13 @@
 import React from 'react'
 import SearchIcon from '@/assets/icons/search.svg'
 
-const Search = () => {
+const SearchInput = (props) => {
+  const variants = {
+    desktop: 'hidden sm:flex bg-stone-100',
+    mobile: 'flex sm:hidden border border-gray-100'
+  }
   return (
-    <div className='hidden sm:flex items-center justify-between bg-stone-100 px-4 py-2 gap-x-2 rounded-full'>
+    <div className={`${variants[props.variant]} items-center justify-between px-4 py-2 gap-x-2 rounded-full`}>
         <img 
             className='w-[24px]' 
             src={SearchIcon} 
@@ -16,4 +20,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default SearchInput
