@@ -49,10 +49,10 @@ const SlideCategory = () => {
         <div
           ref={scrollRef}
           onScroll={checkScroll}
-          className='flex gap-x-8 flex-nowrap w-full px-12 overflow-x-hidden'
+          className='flex gap-x-8 flex-nowrap w-full px-6 sm:px-12 overflow-x-hidden'
         >
           {categories.map((category, index) => (
-            <button key={index} className='whitespace-nowrap text-sm text-stone-600'>
+            <button key={index} className='whitespace-nowrap text-xs sm:text-sm text-stone-600'>
               {category}
             </button>
           ))}

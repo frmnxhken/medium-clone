@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeaderPost from '@/components/post/HeaderPost'
 import { content } from '@/utils/data/ContentDummy'
 import CardPost from '@/components/post/CardPost'
 import ChatResponse from '@/components/post/ChatResponse'
 import CreateResponse from '@/components/post/CreateResponse'
+import Button from '@/components/ui/Button'
+import Responses from '@/components/post/Responses'
 
 const DetailPost = () => {
+  const [active, setActive] = useState(false)
+
   return (
     <div className='pt-8'>
         <HeaderPost/>
@@ -19,6 +23,9 @@ const DetailPost = () => {
             <ChatResponse/>
             <ChatResponse/>
             <ChatResponse/>
+            <div>
+              <Button onClick={() => setActive(!active)} variant='secondary'>See all response</Button>
+            </div>
           </div>
         </div>
         <div className='py-12'>
@@ -28,6 +35,7 @@ const DetailPost = () => {
             <CardPost/>
           </div>
         </div>
+        <Responses active={active} onClose={(val) => setActive(val)}/>
     </div>
   )
 }
