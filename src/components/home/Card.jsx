@@ -1,5 +1,6 @@
 import React from 'react'
 import BookmarkIcon from '@/assets/icons/bookmark.svg'
+import { formatDate } from '@/utils/Date'
 
 const Card = (props) => {
     const { data } = props
@@ -20,7 +21,7 @@ const Card = (props) => {
                         data.description.slice(0, 120) + '..' : data.description}
                 </p>
                 <div className='mt-6 flex justify-between items-center'>
-                    <p className='text-sm'>{data.date}</p>
+                    <p className='text-sm'>{formatDate(data.date)}</p>
                     <img className='w-[24px]' src={BookmarkIcon} alt='bookmark-icon'/>
                 </div>
             </div>
