@@ -7,6 +7,8 @@ import DetailPost from '@/pages/posts/DetailPost'
 import PostLayout from '@/components/layouts/PostLayout'
 import Search from '@/pages/Search'
 import ScrollToTop from '@/utils/ScrollToTop'
+import SignIn from './pages/auth/SignIn'
+import SignUp from './pages/auth/SignUp'
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route path='/detail' element={<PostLayout/>}>
           <Route path='/detail' element={<DetailPost/>}/>
         </Route>
+        <Route path='/signin' element={<SignIn/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
       </Routes>
     </BrowserRouter>
   )
