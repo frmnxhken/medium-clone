@@ -6,7 +6,7 @@ const PostLayout = () => {
   return (
     <>
         <Navbar/>
-        <div className='container max-w-[680px] mx-auto flex justify-evenly px-2'>
+        <div className='container max-w-[680px] mx-auto flex justify-evenly px-6'>
             <Outlet/>
         </div>
     </>

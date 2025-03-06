@@ -6,7 +6,7 @@ const MainLayout = () => {
   return (
     <>
         <Navbar/>
-        <div className='container max-w-[1200px] mx-auto flex flex-col-reverse sm:flex-row justify-evenly px-4'>
+        <div className='container max-w-[1200px] mx-auto flex flex-col-reverse sm:flex-row justify-evenly px-6'>
             <Outlet/>
         </div>
     </>
